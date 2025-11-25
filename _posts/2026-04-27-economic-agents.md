@@ -110,7 +110,7 @@ $$
 ## Background
 
 <figure style="text-align: center;">
-    <img src="{{ 'assets/img/2026-04-27-economic-agents/economic-value.png' | relative_url }}" width="50%">
+    <img src="{{ 'assets/img/2026-04-27-economic-agents/economic-value.png' | relative_url }}" width="20%">
       <figcaption style="font-size: 1em;">Figure 1: Graphical breakdown of Agent Economic Value (AEV) into positive cash inflows (Cost Saving and Efficiency Premium) versus negative outflows (Model, Data, and Human Intervention Costs).</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ Forecasts based on patent text overlap <d-cite key="Handa2025"></d-cite> or embe
 A contemporary LLM-based agent is not an isolated text predictor but an *interactive system* that perceives and acts on the world in extended sequences. Figure 3 illustrates the components and data flows:
 
 <figure style="text-align: center;">
-    <img src="{{ 'assets/img/2026-04-27-economic-agents/picture-1-updated.png' | relative_url }}" width="80%">
+    <img src="{{ 'assets/img/2026-04-27-economic-agents/picture-1-updated.png' | relative_url }}" width="60%">
       <figcaption style="font-size: 1em;">Figure 3: Perception–Action–Self-Improvement pipeline. MCP servers provide read/write primitives; GPU clusters host training & inference.</figcaption>
 </figure>
 
@@ -344,7 +344,7 @@ The two examples demonstrate how quantifying AI through the simplified AEV frame
 Even after a heavy intervention penalty, the agent achieves a 20% profit margin per deep-research report while trebling research coverage. Reducing the intervention rate to 2\% would lift AEV above \$10,000, offering a clear ROI target for further reliability work.
 
 <figure style="text-align: center;">
-    <img src="{{ 'assets/img/2026-04-27-economic-agents/aev_returns_costs_v2.png' | relative_url }}" width="90%">
+    <img src="{{ 'assets/img/2026-04-27-economic-agents/aev_returns_costs_v2.png' | relative_url }}" width="98%">
       <figcaption style="font-size: 1em;">Figure 4: <strong>AEV Structural Analysis: Returns vs. Costs.</strong> The top row displays the composition of economic flows, highlighting the Net Margin (AEV / Total Returns) for each domain. The bottom row contrasts absolute Returns (Cost Saving + Efficiency Premium) against Costs (Human Intervention + Model + Data). While <em>Support Automation</em> (center) benefits from massive scale and low intervention costs, the <em>Finance Deep Research</em> agent (right) illustrates the "reliability tax," where high human intervention costs significantly compress the net margin despite valid cost savings.</figcaption>
 </figure>
 
@@ -366,10 +366,16 @@ The advent of advanced Reinforcement Learning (RL) techniques promises to signif
 The core idea is to define the agent's objective function in terms of our framework's value metrics.
 The total return $G_t$ at a given step $t$ is the sum of immediate economic contributions, $G_t = \text{CostSaving}_t + \text{EfficiencyPremium}_t$. The agent's learning problem then becomes maximizing the expected cumulative discounted Agent Economic Value over an infinite horizon:
 
+
+
 $$
-\max_\pi \mathbb{E}\Biggl[\sum_{k=0}^{\infty}\gamma^k
-        \left( (\text{CostSaving}_{t+k} + \text{EfficiencyPremium}_{t+k}) - \text{ModelCost}_{t+k} - \text{DataCost}_{t+k} - \text{HumanInterventionCost}_{t+k}\right) \Biggr].
+\begin{aligned}
+\max_\pi \mathbb{E}\Biggl[&  \sum_{k=0}^{\infty} \gamma^k
+        \left( (\text{CostSaving}_{t+k} + \text{EfficiencyPremium}_{t+k}) -  \\
+        & \text{ModelCost}_{t+k} - \text{DataCost}_{t+k} - \text{HumanInterventionCost}_{t+k}\right) \Biggr].
+\end{aligned}
 $$
+
 
 Here, the agent's policy $\pi$ is learned to maximize this sum, where $\gamma$ is the discount factor; each term directly reflects measurable economic impact of the agent's actions.
 

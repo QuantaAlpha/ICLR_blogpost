@@ -124,8 +124,8 @@ A *task* is the atomic unit defined by O*NET. Handa *et al.* build a differentia
 ### Limitations of Exposure Studies
 Forecasts based on patent text overlap <d-cite key="Handa2025"></d-cite> or embedding similarity predict potential, not realised impact. Our framework instead *measures* cash deltas per task, capturing both augmentation and automation effects.
 
-<figure style="text-align: center;">
-    <img src="{{ 'assets/img/2026-04-27-economic-agents/logistics-chain.png' | relative_url }}" width="80%">
+<figure style="text-align: center; width: 80%;">
+    <img src="{{ 'assets/img/2026-04-27-economic-agents/logistics-chain.png' | relative_url }}" style="width: 40%;">
       <figcaption style="font-size: 1em;">Figure 2: End-to-end inference supply chain. Curated data and expert prompts are routed through the MCP to the model, where compute tokens refine them into machine-level skills that ultimately map to human-level economic output.</figcaption>
 </figure>
 
@@ -377,9 +377,9 @@ The total return $G_t$ at a given step $t$ is the sum of immediate economic cont
 
 $$
 \begin{aligned}
-\max_\pi \mathbb{E}\Biggl[&  \sum_{k=0}^{\infty} \gamma^k
-        \left( (\text{CostSaving}_{t+k} + \text{EfficiencyPremium}_{t+k}) -  \\
-        & \text{ModelCost}_{t+k} - \text{DataCost}_{t+k} - \text{HumanInterventionCost}_{t+k}\right) \Biggr].
+\max_\pi \mathbb{E}\Biggl[ &  \sum_{k=0}^{\infty} \gamma^k
+        ( (\text{CostSaving}_{t+k} + \text{EfficiencyPremium}_{t+k}) -  \\
+        & \text{ModelCost}_{t+k} - \text{DataCost}_{t+k} - \text{HumanInterventionCost}_{t+k} ) \Biggr].
 \end{aligned}
 $$
 

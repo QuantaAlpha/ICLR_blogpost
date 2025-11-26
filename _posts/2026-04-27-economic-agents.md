@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: "AI Fundamentals: Valuing AI Agents & Data Assets"
-description: "Large Language Model (LLM) agents now read the world through managed-context pipelines, write to it via tool-calling APIs, and continuously re-wire themselves with fresh experience. Stakeholders therefore need a Generally Accepted Accounting Principles (GAAP) compatible method to price both (i) the agent's labour-like output and (ii) the data traces that fuel learning. We formalise four metrics --- agent Economic Value (AEV)--- and demonstrate, using evidence from millions of real conversations, $1 M of freelance software contracts, and 48 k physician rubric points in healthcare, that these metrics are measurable today. We then extend the template to reinforcement-learning regimes in which grounded rewards equal cash flows. Lastly, we propose a **financial settlement layer**, which transforms the agent from a passive software user into an active economic participant."
+description: "Large Language Model (LLM) agents now read the world through managed-context pipelines, write to it via tool-calling APIs, and continuously re-wire themselves with fresh experience. Stakeholders therefore need a Generally Accepted Accounting Principles (GAAP) compatible method to price both (i) the agent's labour-like output and (ii) the data traces that fuel learning. We formalise a single unifying metric - agent Economic Value (AEV)- and demonstrate, using evidence from millions of real conversations, $1M of freelance software contracts, and 48k physician rubric points in healthcare, that these metrics are measurable today. We then extend the template to reinforcement-learning regimes in which grounded rewards equal cash flows. Lastly, we propose a financial settlement layer, which transforms the agent from a passive software user into an active economic participant."
 date: 2026-04-27
 future: true
 htmlwidgets: true
@@ -119,8 +119,8 @@ $$
 
 ## Background
 
-<figure style="text-align: center;">
-    <img src="{{ 'assets/img/2026-04-27-economic-agents/economic-value.png' | relative_url }}" width="10%">
+<figure style="text-align: center; width: 100%;">
+    <img src="{{ 'assets/img/2026-04-27-economic-agents/economic-value.png' | relative_url }}" style="width: 40%;">
       <figcaption style="font-size: 1em;">Figure 1: Graphical breakdown of Agent Economic Value (AEV) into positive cash inflows (Cost Saving and Efficiency Premium) versus negative outflows (Model, Data, and Human Intervention Costs).</figcaption>
 </figure>
 
@@ -130,8 +130,8 @@ A *task* is the atomic unit defined by O*NET. Handa *et al.* build a differentia
 ### Limitations of Exposure Studies
 Forecasts based on patent text overlap <d-cite key="Handa2025"></d-cite> or embedding similarity predict potential, not realised impact. Our framework instead *measures* cash deltas per task, capturing both augmentation and automation effects.
 
-<figure style="text-align: center; width: 80%;">
-    <img src="{{ 'assets/img/2026-04-27-economic-agents/logistics-chain.png' | relative_url }}" style="width: 40%;">
+<figure style="text-align: center; width: 100%;">
+    <img src="{{ 'assets/img/2026-04-27-economic-agents/logistics-chain.png' | relative_url }}" style="width: 80%;">
       <figcaption style="font-size: 1em;">Figure 2: End-to-end inference supply chain. Curated data and expert prompts are routed through the MCP to the model, where compute tokens refine them into machine-level skills that ultimately map to human-level economic output.</figcaption>
 </figure>
 
@@ -140,8 +140,8 @@ Forecasts based on patent text overlap <d-cite key="Handa2025"></d-cite> or embe
 ### Technical Architecture of an AI Agent
 A contemporary LLM-based agent is not an isolated text predictor but an *interactive system* that perceives and acts on the world in extended sequences. Figure 3 illustrates the components and data flows:
 
-<figure style="text-align: center;">
-    <img src="{{ 'assets/img/2026-04-27-economic-agents/picture-1-updated.png' | relative_url }}" width="40%">
+<figure style="text-align: center; width: 100%;">
+    <img src="{{ 'assets/img/2026-04-27-economic-agents/picture-1-updated.png' | relative_url }}" style="width: 80%;">
       <figcaption style="font-size: 1em;">Figure 3: Perception–Action–Self-Improvement pipeline. MCP servers provide read/write primitives; GPU clusters host training & inference.</figcaption>
 </figure>
 

@@ -92,7 +92,7 @@ Large Language Model (LLM) based agents are rapidly evolving beyond simple chatb
 
 Recent analyses of millions of AI usage instances show that AI is already touching a wide range of occupations, with particularly heavy use in software development and writing tasks (together nearly half of all usage) <d-cite key="Handa2025"></d-cite>. Notably, around 36% of occupations see at least a quarter of their tasks involving AI assistance <d-cite key="Handa2025"></d-cite> – but in most cases this is *augmentation* (AI helping a human) rather than full automation. Indeed, one study found 57% of AI usage suggests human-AI collaboration (learning or iterating on an output) vs. 43% where the AI essentially completes tasks autonomously <d-cite key="Handa2025"></d-cite>.
 
-Meanwhile, the capabilities of frontier models have been climbing rapidly. In high-stakes domains like medicine, open-ended physician-written evaluations (HealthBench) show model performance improving from 16% (GPT-3.5) to 32% (GPT-4) and up to 60% with the latest models <d-cite key="Arora2025"></d-cite> within two years – a nearly 4x improvement. In software engineering, new benchmarks of freelance programming tasks (SWE-Lancer) valued at \$1M found that state-of-the-art models can now complete a significant subset of real-world coding jobs (earning about \$400k of the \$1M total value) <d-cite key="Miserendino2025"></d-cite>, though they still fail on the majority of tasks. We are entering what Silver and Sutton term the *Era of Experience* <d-cite key="SilverSutton2025"></d-cite>, where AI agents learn continuously from real-world interactions rather than solely from static training data.
+Meanwhile, the capabilities of frontier models have been climbing rapidly. In high-stakes domains like medicine, open-ended physician-written evaluations (HealthBench) show model performance improving from 16% (GPT-3.5) to 32% (GPT-4) and up to 60% with the latest models <d-cite key="Arora2025"></d-cite> within two years – a nearly 4x improvement. In software engineering, new benchmarks of freelance programming tasks (SWE-Lancer) valued at &#36 1M found that state-of-the-art models can now complete a significant subset of real-world coding jobs (earning about &#36400k of the &#361M total value) <d-cite key="Miserendino2025"></d-cite>, though they still fail on the majority of tasks. We are entering what Silver and Sutton term the *Era of Experience* <d-cite key="SilverSutton2025"></d-cite>, where AI agents learn continuously from real-world interactions rather than solely from static training data.
 
 **Contributions.**
 We present an expanded **AI Fundamentals** framework that maps every technical aspect of an AI agent's performance into the language of economics and public-company finance. Our goal is to define a single unifying metric – **Agent Economic Value (AEV)** – which collapses all performance aspects into one cash–flow based expression:
@@ -110,7 +110,7 @@ $$
 ## Background
 
 <figure style="text-align: center;">
-    <img src="{{ 'assets/img/2026-04-27-economic-agents/economic-value.png' | relative_url }}" width="20%">
+    <img src="{{ 'assets/img/2026-04-27-economic-agents/economic-value.png' | relative_url }}" width="10%">
       <figcaption style="font-size: 1em;">Figure 1: Graphical breakdown of Agent Economic Value (AEV) into positive cash inflows (Cost Saving and Efficiency Premium) versus negative outflows (Model, Data, and Human Intervention Costs).</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ Forecasts based on patent text overlap <d-cite key="Handa2025"></d-cite> or embe
 A contemporary LLM-based agent is not an isolated text predictor but an *interactive system* that perceives and acts on the world in extended sequences. Figure 3 illustrates the components and data flows:
 
 <figure style="text-align: center;">
-    <img src="{{ 'assets/img/2026-04-27-economic-agents/picture-1-updated.png' | relative_url }}" width="60%">
+    <img src="{{ 'assets/img/2026-04-27-economic-agents/picture-1-updated.png' | relative_url }}" width="40%">
       <figcaption style="font-size: 1em;">Figure 3: Perception–Action–Self-Improvement pipeline. MCP servers provide read/write primitives; GPU clusters host training & inference.</figcaption>
 </figure>
 
@@ -157,7 +157,10 @@ The **Model & Compute** layer is priced *per inference token*. Beyond raw comput
 Putting these pieces together, the updated AI Fundamental identity is
 
 $$
-\text{AEV} = \text{Cost Saving} + \text{Efficiency Premium} - \text{Model Cost} - \text{Data Cost} - \text{Human Intervention Cost},
+\begin{aligned}
+\text{AEV} &= \text{Cost Saving} + \text{Efficiency Premium} - \text{Model Cost} \\
+&- \text{Data Cost} - \text{Human Intervention Cost},
+\end{aligned}
 $$
 
 where Model Cost $=$ (inference compute token cost) $+$ model premium, and all terms are measured on a *marginal* per-task basis.
@@ -203,8 +206,8 @@ The Efficiency Premium often remains latent until human-intervention costs are b
 
 1.  **Task Extraction.** For unstructured chat logs we apply Clio's embedding+pattern pipeline (DP noise $\epsilon=0.5$) <d-cite key="Handa2025"></d-cite>.
 2.  **Dollar Valuation.**
-    * *Software*: Upwork median payout $\tilde{p}=$ \$500; full ticket pool \$1M <d-cite key="Miserendino2025"></d-cite>.
-    * *Healthcare*: average avoided readmission saves \$12,000 (CMS FY-24); multiply HealthBench rubric score by that coefficient <d-cite key="Arora2025"></d-cite>.
+    * *Software*: Upwork median payout $\tilde{p}=$ &#36 500; full ticket pool &#36 1M <d-cite key="Miserendino2025"></d-cite>.
+    * *Healthcare*: average avoided readmission saves &#36 12,000 (CMS FY-24); multiply HealthBench rubric score by that coefficient <d-cite key="Arora2025"></d-cite>.
 3.  **Human-Intervention Logging.** Tag manual edits, escalations, or tool fallbacks. Frontier models still miss $\sim 60\%$ of SWE-Lancer tasks <d-cite key="Miserendino2025"></d-cite>.
 4.  **Experience Accounting.** Tokens spent on self-play or simulation $\to$ *Exploration Opex*; indispensable for the experience-era view <d-cite key="SilverSutton2025"></d-cite>.
 
@@ -220,10 +223,10 @@ The Efficiency Premium often remains latent until human-intervention costs are b
 * 57% of usage suggests human–AI collaboration, while 43% represents full automation.
 
 ### SWE–Lancer: Outcome–Priced Coding
-The dataset comprises 1,488 Upwork tickets totalling \$1M in payouts. Claude 3.5 Sonnet earns \$403k, yielding a median cost–saving rate (CSR) of roughly \$300 and an HIR of about 74% <d-cite key="Miserendino2025"></d-cite>. Robust human–written tests mitigate grader gaming.
+The dataset comprises 1,488 Upwork tickets totalling &#36 1M in payouts. Claude 3.5 Sonnet earns &#36 403k, yielding a median cost–saving rate (CSR) of roughly &#36 300 and an HIR of about 74% <d-cite key="Miserendino2025"></d-cite>. Robust human–written tests mitigate grader gaming.
 
 ### HealthBench: Safety–Critical Triage
-GPT–4o scores 32%, whereas a later model (*o3*) scores 60% <d-cite key="Arora2025"></d-cite>. Using the \$12,000 valuation coefficient (Section 4), GPT–4o's 32\% rubric score translates to a CSR of approximately \$3,840 per triage (0.32 $\times$ \$12,000). The *o3* model, with a 60% score, yields an HIR of roughly 40\%.
+GPT–4o scores 32%, whereas a later model (*o3*) scores 60% <d-cite key="Arora2025"></d-cite>. Using the &#36 12,000 valuation coefficient (Section 4), GPT–4o's 32\% rubric score translates to a CSR of approximately &#36 3,840 per triage (0.32 $\times$ &#36 12,000). The *o3* model, with a 60% score, yields an HIR of roughly 40\%.
 
 ## Examples
 
@@ -234,78 +237,78 @@ A consulting firm, *InsightCorp*, deploys an AI agent to streamline market resea
 
 **Scenario and Baseline**
 * **Task**: Analyze market trends and generate a client-ready 50-page report.
-* **Baseline (Human-Only)**: 2 analysts, 10 days (160 hours), \$75/hour = \$12,000 per report.
+* **Baseline (Human-Only)**: 2 analysts, 10 days (160 hours), &#36 75/hour = &#36 12,000 per report.
 * **Output**: Maximum 2 reports per month per team.
 
 **AI Fundamentals Metrics**
 
 *Cost Saving*
-* AI processing: \$500
-* Human review (reduced to 40 hours): \$3,000
-* Total agent-assisted cost: \$3,500
-* **Cost Saving** = \$12,000 - \$3,500 = **\$8,500 per report**
+* AI processing: &#36 500
+* Human review (reduced to 40 hours): &#36 3,000
+* Total agent-assisted cost: &#36 3,500
+* **Cost Saving** = &#36 12,000 - &#36 3,500 = **&#36 8,500 per report**
 
 *Efficiency Premium*
-* Increased throughput (4 reports/month vs. 2): \$10,000 per report
-* Enhanced quality/scope: \$1,000 per report
-* **Efficiency Premium** = **\$11,000 per report**
+* Increased throughput (4 reports/month vs. 2): &#36 10,000 per report
+* Enhanced quality/scope: &#36 1,000 per report
+* **Efficiency Premium** = **&#36 11,000 per report**
 
 *Human Intervention Cost*
 * 19 reports require only planned review
 * 1 report needs significant rescue (vs. previous 2)
 * Intervention incidents: 1 out of 20 reports required rescue (5%).
-* **Intervention penalty**: We assign a governance penalty of \$10 per basis point of intervention; hence 450 b.p. =4.5\% $\times$ 10 = \$4,500.
+* **Intervention penalty**: We assign a governance penalty of &#36 10 per basis point of intervention; hence 450 b.p. =4.5\% $\times$ 10 = &#36 4,500.
 
 *Agent Economic Value (AEV)*
-* Additional costs (infrastructure, exploration): \$1,000
-* Intervention penalty: \$10/b.p. × 450 b.p. = \$4,500 (reduced from \$9,500)
-* **AEV** = \$8,500 + \$11,000 - (\$1,000 + \$4,500) = **\$14,000 per report**
+* Additional costs (infrastructure, exploration): &#36 1,000
+* Intervention penalty: &#36 10/b.p. × 450 b.p. = &#36 4,500 (reduced from &#36 9,500)
+* **AEV** = &#36 8,500 + &#36 11,000 - (&#36 1,000 + &#36 4,500) = **&#36 14,000 per report**
 
 **Key Outcomes**
-The AI agent delivers substantial value with \$14,000 net profit per report. Even with a 5% intervention rate, the system achieves:
-* 71% cost reduction (\$8,500 savings per report)
+The AI agent delivers substantial value with &#36 14,000 net profit per report. Even with a 5% intervention rate, the system achieves:
+* 71% cost reduction (&#36 8,500 savings per report)
 * 100% increased throughput (4 vs. 2 reports monthly)
-* 117% ROI (\$14,000 profit/\$12,000 baseline cost)
+* 117% ROI (&#36 14,000 profit/&#36 12,000 baseline cost)
 
-Further reducing intervention incidents to 2% would add another \$3,000 to AEV (to \$17,000), highlighting how reliability directly impacts profitability. The growing data asset of analyzed reports and market insights can be capitalized once it demonstrably improves future cash flows.
+Further reducing intervention incidents to 2% would add another &#36 3,000 to AEV (to &#36 17,000), highlighting how reliability directly impacts profitability. The growing data asset of analyzed reports and market insights can be capitalized once it demonstrably improves future cash flows.
 
 ### Example 2: AI-Enhanced Customer Support Automation
 *ConnectSphere Inc.*, a telecom company, deploys an AI system to improve customer support operations.
 
 **Scenario and Baseline**
 * **Task Domain**: Tier-1 customer support (password resets, billing inquiries, basic troubleshooting)
-* **Baseline**: 100 agents handling 50,000 monthly interactions at \$10 per interaction (\$500,000 total)
+* **Baseline**: 100 agents handling 50,000 monthly interactions at &#36 10 per interaction (&#36 500,000 total)
 * **Service Quality**: 15-minute average resolution time, 70% CSAT score
 
 **AI Fundamentals Metrics**
 
 *Cost Saving*
 * AI fully resolves 20,000 interactions; humans handle 30,000 with AI assistance
-* AI system cost: \$50,000
-* Reduced human staffing: 50 agents at \$5,000 each = \$250,000
-* **Cost Saving** = \$500,000 - \$300,000 = **\$200,000 per month**
+* AI system cost: &#36 50,000
+* Reduced human staffing: 50 agents at &#36 5,000 each = &#36 250,000
+* **Cost Saving** = &#36 500,000 - &#36 300,000 = **&#36 200,000 per month**
 
 *Efficiency Premium*
-* CSAT improvement (70\% → 88\%), reducing churn: \$120,000
-* 24/7 availability: \$20,000
-* **Efficiency Premium** = **\$140,000 per month** (increased from previous \$120,000)
+* CSAT improvement (70\% → 88\%), reducing churn: &#36 120,000
+* 24/7 availability: &#36 20,000
+* **Efficiency Premium** = **&#36 140,000 per month** (increased from previous &#36 120,000)
 
 *Human Intervention Cost*
 * 600 interactions (3% of AI-only attempts) require human rescue (reduced from 5%)
-* **Intervention penalty**: We assign a governance penalty of \$50 per basis point of intervention; hence 200 b.p. = 2\% $\times$ \$50 = \$10,000.
+* **Intervention penalty**: We assign a governance penalty of &#36 50 per basis point of intervention; hence 200 b.p. = 2\% $\times$ &#36 50 = &#36 10,000.
 
 *Agent Economic Value (AEV)*
-* Intervention penalty: \$50/b.p. $\times$ 200 b.p. = \$10,000 (reduced from \$20,000)
-* **AEV** = \$200,000 + \$140,000 - (\$0 + \$10,000) = **\$330,000 per month**
+* Intervention penalty: &#36 50/b.p. $\times$ 200 b.p. = &#36 10,000 (reduced from &#36 20,000)
+* **AEV** = &#36 200,000 + &#36 140,000 - (&#36 0 + &#36 10,000) = **&#36 330,000 per month**
 
 **Key Outcomes**
-The AI support system delivers exceptional value with \$330,000 monthly profit (66% return). Key results include:
-* 40% cost reduction (\$200,000 monthly savings)
+The AI support system delivers exceptional value with &#36 330,000 monthly profit (66% return). Key results include:
+* 40% cost reduction (&#36 200,000 monthly savings)
 * 67% faster resolution (5 vs. 15 minutes for AI-handled queries)
 * 26% CSAT improvement (70\% → 88\%)
 * 24/7 availability (previously unavailable)
 
-Further reducing the intervention rate from 3% to 1% would add another \$10,000 to monthly AEV, completely eliminating the penalty. The customer interaction data asset grows continuously, becoming increasingly valuable for personalization and service improvement.
+Further reducing the intervention rate from 3% to 1% would add another &#36 10,000 to monthly AEV, completely eliminating the penalty. The customer interaction data asset grows continuously, becoming increasingly valuable for personalization and service improvement.
 
 The two examples demonstrate how quantifying AI through the simplified AEV framework enables precise evaluation of economic contribution. In both cases, intervention costs materially influence profitability, providing concrete ROI targets for improving reliability.
 
@@ -314,34 +317,34 @@ The two examples demonstrate how quantifying AI through the simplified AEV frame
 
 **Scenario and Baseline**
 * **Task:** Produce a 20-page forensic analysis covering accounting quality, competitive moat, and scenario valuation for one ticker.
-* **Baseline (Human-Only):** 1 senior analyst + 2 associates, 80 hours total at an average blended rate of \$180/h $\Rightarrow$ \$14,400 per report.
+* **Baseline (Human-Only):** 1 senior analyst + 2 associates, 80 hours total at an average blended rate of &#36 180/h $\Rightarrow$ &#36 14,400 per report.
 * **Throughput:** 10 tickers per quarter.
 
 **AI Fundamentals Metrics**
 
 *Cost Saving*
-* LLM inference and retrieval cost: \$400.  
-* Human review (senior analyst 8 h): \$1,440.
-* Total agent-assisted cost: \$1,840.
-* **Cost Saving** = \$14,400 - \$1,840 = \$12,560 per report.
+* LLM inference and retrieval cost: &#36 400.  
+* Human review (senior analyst 8 h): &#36 1,440.
+* Total agent-assisted cost: &#36 1,840.
+* **Cost Saving** = &#36 14,400 - &#36 1,840 = &#36 12,560 per report.
 
 *Efficiency Premium*
-* Faster turn-around enables coverage of 25 tickers/quarter (2.5× baseline) generating incremental fee income of \$30,000.
-* Richer alt-data synthesis improves hit-rate, adding expected alpha worth \$5,000 per report.
-* **Efficiency Premium** = \$35,000 / 25 $\approx$ \$1,400 per report.
+* Faster turn-around enables coverage of 25 tickers/quarter (2.5× baseline) generating incremental fee income of &#36 30,000.
+* Richer alt-data synthesis improves hit-rate, adding expected alpha worth &#36 5,000 per report.
+* **Efficiency Premium** = &#36 35,000 / 25 $\approx$ &#36 1,400 per report.
 
 *Human Intervention Cost*
-* 2 of 25 reports require significant rewrites $\Rightarrow$ **Intervention penalty**: We assign a governance penalty of \$15 per basis point of intervention; hence 700 b.p. =7\% $\times$ \$15 = \$10,500.
+* 2 of 25 reports require significant rewrites $\Rightarrow$ **Intervention penalty**: We assign a governance penalty of &#36 15 per basis point of intervention; hence 700 b.p. =7\% $\times$ &#36 15 = &#36 10,500.
 * Policy gate: 1% (100 b.p.) $\Rightarrow$ excess 700 b.p.
 
 *Agent Economic Value (AEV)*
-* Model Cost (inference tokens + premium): \$400.
-* Data Cost (alt-data subscription slices): \$150.
-* Intervention penalty ($\lambda$ = 15 b.p.): \$10,500.
-* **AEV** = \$12,560 + \$1,400 - (\$400 + \$150) - \$10,500 = \$2,910 per report.
+* Model Cost (inference tokens + premium): &#36 400.
+* Data Cost (alt-data subscription slices): &#36 150.
+* Intervention penalty ($\lambda$ = 15 b.p.): &#36 10,500.
+* **AEV** = &#36 12,560 + &#36 1,400 - (&#36 400 + &#36 150) - &#36 10,500 = &#36 2,910 per report.
 
 **Key Outcomes**
-Even after a heavy intervention penalty, the agent achieves a 20% profit margin per deep-research report while trebling research coverage. Reducing the intervention rate to 2\% would lift AEV above \$10,000, offering a clear ROI target for further reliability work.
+Even after a heavy intervention penalty, the agent achieves a 20% profit margin per deep-research report while trebling research coverage. Reducing the intervention rate to 2\% would lift AEV above &#36 10,000, offering a clear ROI target for further reliability work.
 
 <figure style="text-align: center;">
     <img src="{{ 'assets/img/2026-04-27-economic-agents/aev_returns_costs_v2.png' | relative_url }}" width="98%">

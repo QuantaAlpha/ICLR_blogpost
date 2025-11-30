@@ -62,11 +62,11 @@ toc:
       - name: "Example 3: AI-Driven Deep Research in Finance"
       - name: "Key Insights"
   - name: "The Reinforcement Learning Accelerator"
-  - name: "Conclusion"
   - name: "Future Outlook: Agentic Liquidity and The MCP Wallet"
     subsections:
       - name: "The Problem: Closed Resource Loops"
       - name: "The Solution: The Settlement Layer"
+  - name: "Conclusion"
 
 # Below is an example of injecting additional post-specific styles.
 # This is used in the 'Layouts' section of this post.

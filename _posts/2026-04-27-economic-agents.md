@@ -154,7 +154,7 @@ The architecture includes:
 Everything is orchestrated by a **Managed Compute & Prompt (MCP) service**, which coordinates reads and writes and provides an interface to the agent.
 
 ### Resource Taxonomy and Marginal Valuation
-Data are *non-fungible* assets whose worth is governed by their *quality* rather than sheer volume <d-cite key=" moon-etal-2025-limacost,yanggmvaluator,zhang2025fairshare"></d-cite>. We track four economically distinct subclasses:
+Data are *non-fungible* assets whose worth is governed by their *quality* rather than sheer volume <d-cite key="moon-etal-2025-limacost,yanggmvaluator,zhang2025fairshare"></d-cite>. We track four economically distinct subclasses:
 1.  **Expert Time** – manually crafted demonstrations, ratings, or critiques by domain specialists.
 2.  **Live-Environment Experience** – interaction traces collected during real production usage.
 3.  **Inference Data Stream** – prompts and completions logged on-the-fly at inference time.
@@ -372,7 +372,7 @@ Finally, we consider a simulated quantitative asset-management firm, *AlphaFunds
 Even after a heavy intervention penalty, the simulated agent achieves a 20% profit margin. Reducing the intervention rate to 2% in the model would lift AEV above \\$10,000.
 
 <figure style="text-align: center;">
-<img src="{{ 'assets/img/2026-04-27-economic-agents/aev\_returns\_costs\_v2.png' | relative\_url }}" width="98%">
+<img src="{{ 'assets/img/2026-04-27-economic-agents/aev_returns_costs_v2.png' | relative\_url }}" width="98%">
 <figcaption style="font-size: 1em;">Figure 4: <strong>AEV Structural Analysis: Returns vs. Costs.</strong> The top row displays the composition of economic flows, highlighting the Net Margin (AEV / Total Returns) for each simulated domain. The bottom row contrasts absolute Returns (Cost Saving + Efficiency Premium) against Costs (Human Intervention + Model + Data). While <em>Support Automation</em> (center) benefits from massive scale and low intervention costs, the <em>Finance Deep Research</em> agent (right) illustrates the "reliability tax," where high human intervention costs significantly compress the net margin despite valid cost savings.</figcaption>
 </figure>
 

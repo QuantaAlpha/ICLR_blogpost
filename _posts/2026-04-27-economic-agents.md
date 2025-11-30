@@ -240,138 +240,142 @@ GPT–4o scores 32%, whereas a later model (*o3*) scores 60% <d-cite key="Arora2
 
 ## Examples
 
-This section illustrates how the simplified AEV framework applies to practical business scenarios <d-cite key="ackerman2025perceptions"></d-cite>, demonstrating how cost savings, efficiency gains, and intervention penalties interplay to drive net value. In both examples, the AI agents are powerful and deliver positive net value, and the examples show how intervention penalties modulate profitability.
+To demonstrate the diagnostic utility of the **AI Fundamentals** framework, we apply it to three **simulated** business scenarios. While these case studies are hypothetical, the parameters are modeled on realistic operational baselines and current frontier model pricing <d-cite key="ackerman2025perceptions"></d-cite>. These simulations illustrate how the AEV equation decomposes complex agent deployments into clear economic drivers, highlighting the interplay between cost savings, efficiency gains, and the critical "tax" of human intervention.
 
 ### Example 1: AI-Powered Market Research Analysis and Report Generation
-A consulting firm, *InsightCorp*, deploys an AI agent to streamline market research analysis and report generation.
+
+We model a hypothetical consulting firm, *InsightCorp*, that deploys an AI agent to streamline the production of market research.
 
 **Scenario and Baseline**
-* **Task**: Analyze market trends and generate a client-ready 50-page report.
-* **Baseline (Human-Only)**: 2 analysts, 10 days (160 hours), \\$75/hour = \\$12,000 per report.
-* **Output**: Maximum 2 reports per month per team.
 
-**AI Fundamentals Metrics**
+  * **Task**: Analyze market trends and generate a client-ready 50-page report.
+  * **Baseline (Human-Only)**: 2 analysts, 10 days (160 hours), \\$75/hour = \\$12,000 per report.
+  * **Output**: Maximum 2 reports per month per team.
+
+**AI Fundamentals Metrics (Simulated)**
 
 *Cost Saving*
-* AI processing: \\$500
-* Human review (reduced to 40 hours): \\$3,000
-* Total agent-assisted cost: \\$3,500
-* **Cost Saving** = \\$12,000 - \\$3,500 = **\\$8,500 per report**
+
+  * AI processing: \\$500
+  * Human review (reduced to 40 hours): \\$3,000
+  * Total agent-assisted cost: \\$3,500
+  * **Cost Saving** = \\$12,000 - \\$3,500 = **\\$8,500 per report\*\*
 
 *Efficiency Premium*
-* Increased throughput (4 reports/month vs. 2): \\$10,000 per report
-* Enhanced quality/scope: \\$1,000 per report
-* **Efficiency Premium** = **\\$11,000 per report**
+
+  * Increased throughput (4 reports/month vs. 2): \\$10,000 per report
+  * Enhanced quality/scope: \\$1,000 per report
+  * **Efficiency Premium** = **\\$11,000 per report**
 
 *Human Intervention Cost*
-* 19 reports require only planned review
-* 1 report needs significant rescue (vs. previous 2)
-* Intervention incidents: 1 out of 20 reports required rescue (5%).
-* **Intervention penalty**: We assign a governance penalty of \\$10 per basis point of intervention; hence 450 b.p. =4.5% $\times$ 10 = \\$4,500.
+
+  * In this model, 19 reports require only planned review.
+  * 1 report needs significant rescue (vs. previous 2).
+  * Intervention incidents: 1 out of 20 reports required rescue (5%).
+  * **Intervention penalty**: We assign a simulated governance penalty of \\$10 per basis point of intervention; hence 450 b.p. = 4.5% $\times$ 10 = \\$4,500.
 
 *Agent Economic Value (AEV)*
-* Additional costs (infrastructure, exploration): \\$1,000
-* Intervention penalty: \\$10/b.p. × 450 b.p. = \\$4,500 (reduced from \\$9,500)
-* **AEV** = \\$8,500 + \\$11,000 - (\\$1,000 + \\$4,500) = **\\$14,000 per report**
+
+  * Additional costs (infrastructure, exploration): \\$1,000
+  * Intervention penalty: \\$10/b.p. $\times$ 450 b.p. = \\$4,500 (reduced from \\$9,500)
+  * **AEV** = \\$8,500 + \\$11,000 - (\\$1,000 + \\$4,500) = **\\$14,000 per report\*\*
 
 **Key Outcomes**
-The AI agent delivers substantial value with \\$14,000 net profit per report. Even with a 5% intervention rate, the system achieves:
-* 71% cost reduction (\\$8,500 savings per report)
-* 100% increased throughput (4 vs. 2 reports monthly)
-* 117% ROI (\\$14,000 profit/\\$12,000 baseline cost)
+The simulation suggests that even with a 5% intervention rate, the system achieves:
 
-Further reducing intervention incidents to 2% would add another \\$3,000 to AEV (to \\$17,000), highlighting how reliability directly impacts profitability. The growing data asset of analyzed reports and market insights can be capitalized once it demonstrably improves future cash flows.
+  * 71% cost reduction (\\$8,500 savings per report)
+  * 100% increased throughput (4 vs. 2 reports monthly)
+  * 117% ROI (\\$14,000 profit/\\$12,000 baseline cost)
+
+Further reducing intervention incidents to 2% in this model would add another \\$3,000 to AEV (to \\$17,000), highlighting how reliability directly impacts profitability.
 
 ### Example 2: AI-Enhanced Customer Support Automation
-*ConnectSphere Inc.*, a telecom company, deploys an AI system to improve customer support operations.
+
+Next, we simulate *ConnectSphere Inc.*, a hypothetical telecom company deploying an AI system to handle Tier-1 support.
 
 **Scenario and Baseline**
-* **Task Domain**: Tier-1 customer support (password resets, billing inquiries, basic troubleshooting)
-* **Baseline**: 100 agents handling 50,000 monthly interactions at \\$10 per interaction (\\$500,000 total)
-* **Service Quality**: 15-minute average resolution time, 70% CSAT score
 
-**AI Fundamentals Metrics**
+  * **Task Domain**: Tier-1 customer support (password resets, billing inquiries, basic troubleshooting)
+  * **Baseline**: 100 agents handling 50,000 monthly interactions at \\$10 per interaction (\\$500,000 total)
+  * **Service Quality**: 15-minute average resolution time, 70% CSAT score
+
+**AI Fundamentals Metrics (Simulated)**
 
 *Cost Saving*
-* AI fully resolves 20,000 interactions; humans handle 30,000 with AI assistance
-* AI system cost: \\$50,000
-* Reduced human staffing: 50 agents at \\$5,000 each = \\$250,000
-* **Cost Saving** = \\$500,000 - \\$300,000 = **\\$200,000 per month**
+
+  * AI fully resolves 20,000 interactions; humans handle 30,000 with AI assistance
+  * AI system cost: \\$50,000
+  * Reduced human staffing: 50 agents at \\$5,000 each = \\$250,000
+  * **Cost Saving** = \\$500,000 - \\$300,000 = **\\$200,000 per month\*\*
 
 *Efficiency Premium*
-* CSAT improvement (70% → 88%), reducing churn: \\$120,000
-* 24/7 availability: \\$20,000
-* **Efficiency Premium** = **\\$140,000 per month** (increased from previous \\$120,000)
+
+  * CSAT improvement (70% $\to$ 88%), reducing churn: \\$120,000
+  * 24/7 availability: \\$20,000
+  * **Efficiency Premium** = \*\*\\$140,000 per month** (increased from previous \\$120,000)
 
 *Human Intervention Cost*
-* 600 interactions (3% of AI-only attempts) require human rescue (reduced from 5%)
-* **Intervention penalty**: We assign a governance penalty of \\$50 per basis point of intervention; hence 200 b.p. = 2% $\times$ \\$50 = \\$10,000.
+
+  * 600 interactions (3% of AI-only attempts) require human rescue (reduced from 5%)
+  * **Intervention penalty**: We assign a governance penalty of \\$50 per basis point of intervention; hence 200 b.p. = 2% $\times$ \\$50 = \\$10,000.
 
 *Agent Economic Value (AEV)*
-* Intervention penalty: \\$50/b.p. $\times$ 200 b.p. = \\$10,000 (reduced from \\$20,000)
-* **AEV** = \\$200,000 + \\$140,000 - (\\$0 + \\$10,000) = **\\$330,000 per month**
+
+  * Intervention penalty: \\$50/b.p. $\times$ 200 b.p. = \\$10,000 (reduced from \\$20,000)
+  * **AEV** = \\$200,000 + \\$140,000 - (\\$0 + \\$10,000) = **\\$330,000 per month\*\*
 
 **Key Outcomes**
-The AI support system delivers exceptional value with \\$330,000 monthly profit (66% return). Key results include:
-* 40% cost reduction (\\$200,000 monthly savings)
-* 67% faster resolution (5 vs. 15 minutes for AI-handled queries)
-* 26% CSAT improvement (70% → 88%)
-* 24/7 availability (previously unavailable)
+In this scenario, the agent delivers a \\$330,000 monthly profit (66% return). Key drivers in the model include:
 
-Further reducing the intervention rate from 3% to 1% would add another \\$10,000 to monthly AEV, completely eliminating the penalty. The customer interaction data asset grows continuously, becoming increasingly valuable for personalization and service improvement.
-
-The two examples demonstrate how quantifying AI through the simplified AEV framework enables precise evaluation of economic contribution. In both cases, intervention costs materially influence profitability, providing concrete ROI targets for improving reliability.
+  * 40% cost reduction (\\$200,000 monthly savings)
+  * 67% faster resolution (5 vs. 15 minutes for AI-handled queries)
+  * 26% CSAT improvement (70% $\to$ 88%)
 
 ### Example 3: AI-Driven Deep Research in Finance
-*AlphaFunds*, a quantitative asset-management firm, deploys an LLM agent to generate deep-dive reports on listed companies ahead of earnings.
+
+Finally, we consider a simulated quantitative asset-management firm, *AlphaFunds*, deploying an LLM agent for forensic financial analysis.
 
 **Scenario and Baseline**
-* **Task:** Produce a 20-page forensic analysis covering accounting quality, competitive moat, and scenario valuation for one ticker.
-* **Baseline (Human-Only):** 1 senior analyst + 2 associates, 80 hours total at an average blended rate of \\$180/h $\Rightarrow$ \\$14,400 per report.
-* **Throughput:** 10 tickers per quarter.
 
-**AI Fundamentals Metrics**
+  * **Task:** Produce a 20-page forensic analysis covering accounting quality, competitive moat, and scenario valuation for one ticker.
+  * **Baseline (Human-Only):** 1 senior analyst + 2 associates, 80 hours total at an average blended rate of \\$180/h $\Rightarrow$ \\$14,400 per report.
+  * **Throughput:** 10 tickers per quarter.
+
+**AI Fundamentals Metrics (Simulated)**
 
 *Cost Saving*
-* LLM inference and retrieval cost: \\$400.  
-* Human review (senior analyst 8 h): \\$1,440.
-* Total agent-assisted cost: \\$1,840.
-* **Cost Saving** = \\$14,400 - \\$1,840 = \\$12,560 per report.
+
+  * LLM inference and retrieval cost: \\$400.
+  * Human review (senior analyst 8 h): \\$1,440.
+  * Total agent-assisted cost: \\$1,840.
+  * **Cost Saving** = \\$14,400 - \\$1,840 = \\$12,560 per report.
 
 *Efficiency Premium*
-* Faster turn-around enables coverage of 25 tickers/quarter (2.5× baseline) generating incremental fee income of \\$30,000.
-* Richer alt-data synthesis improves hit-rate, adding expected alpha worth \\$5,000 per report.
-* **Efficiency Premium** = \\$35,000 / 25 $\approx$ \\$1,400 per report.
+
+  * Faster turn-around enables coverage of 25 tickers/quarter (2.5× baseline) generating incremental fee income of \\$30,000.
+  * Richer alt-data synthesis improves hit-rate, adding expected alpha worth \\$5,000 per report.
+  * **Efficiency Premium** = \\$35,000 / 25 $\approx$ \\$1,400 per report.
 
 *Human Intervention Cost*
-* 2 of 25 reports require significant rewrites $\Rightarrow$ **Intervention penalty**: We assign a governance penalty of \\$15 per basis point of intervention; hence 700 b.p. =7% $\times$ \\$15 = \\$10,500.
-* Policy gate: 1% (100 b.p.) $\Rightarrow$ excess 700 b.p.
+
+  * 2 of 25 reports require significant rewrites $\Rightarrow$ **Intervention penalty**: We assign a governance penalty of \\$15 per basis point of intervention; hence 700 b.p. = 7% $\times$ \\$15 = \\$10,500.
+  * Policy gate: 1% (100 b.p.) $\Rightarrow$ excess 700 b.p.
 
 *Agent Economic Value (AEV)*
-* Model Cost (inference tokens + premium): \\$400.
-* Data Cost (alt-data subscription slices): \\$150.
-* Intervention penalty ($\lambda$ = 15 b.p.): \\$10,500.
-* **AEV** = \\$12,560 + \\$1,400 - (\\$400 + \\$150) - \\$10,500 = \\$2,910 per report.
+
+  * Model Cost (inference tokens + premium): \\$400.
+  * Data Cost (alt-data subscription slices): \\$150.
+  * Intervention penalty ($\lambda$ = 15 b.p.): \\$10,500.
+  * **AEV** = \\$12,560 + \\$1,400 - (\\$400 + \\$150) - \\$10,500 = \\$2,910 per report.
 
 **Key Outcomes**
-Even after a heavy intervention penalty, the agent achieves a 20% profit margin per deep-research report while trebling research coverage. Reducing the intervention rate to 2% would lift AEV above \\$10,000, offering a clear ROI target for further reliability work.
+Even after a heavy intervention penalty, the simulated agent achieves a 20% profit margin. Reducing the intervention rate to 2% in the model would lift AEV above \\$10,000.
 
 <figure style="text-align: center;">
-    <img src="{{ 'assets/img/2026-04-27-economic-agents/aev_returns_costs_v2.png' | relative_url }}" width="98%">
-      <figcaption style="font-size: 1em;">Figure 4: <strong>AEV Structural Analysis: Returns vs. Costs.</strong> The top row displays the composition of economic flows, highlighting the Net Margin (AEV / Total Returns) for each domain. The bottom row contrasts absolute Returns (Cost Saving + Efficiency Premium) against Costs (Human Intervention + Model + Data). While <em>Support Automation</em> (center) benefits from massive scale and low intervention costs, the <em>Finance Deep Research</em> agent (right) illustrates the "reliability tax," where high human intervention costs significantly compress the net margin despite valid cost savings.</figcaption>
+<img src="{{ 'assets/img/2026-04-27-economic-agents/aev\_returns\_costs\_v2.png' | relative\_url }}" width="98%">
+<figcaption style="font-size: 1em;">Figure 4: <strong>AEV Structural Analysis: Returns vs. Costs.</strong> The top row displays the composition of economic flows, highlighting the Net Margin (AEV / Total Returns) for each simulated domain. The bottom row contrasts absolute Returns (Cost Saving + Efficiency Premium) against Costs (Human Intervention + Model + Data). While <em>Support Automation</em> (center) benefits from massive scale and low intervention costs, the <em>Finance Deep Research</em> agent (right) illustrates the "reliability tax," where high human intervention costs significantly compress the net margin despite valid cost savings.</figcaption>
 </figure>
 
-### Key Insights
-Analyzing the AEV components across these domains (Figure 4) reveals three structural insights:
-
-**1. The Efficiency Multiplier.**
-In two of the three cases, the **Efficiency Premium** contributes significantly to Total Returns. Accounting solely for labor displacement (Cost Saving) significantly undervalues agents that enable capabilities previously impossible for humans (e.g., 24/7 distinct threads or instant broad-market scanning).
-
-**2. The Reliability Tax.**
-The visualization highlights that **Human Intervention Cost** is the primary governor of AEV, not compute cost. In the Finance example, intervention costs are $26\times$ higher than the Model and Data costs combined. This suggests that R&D investment should prioritize reliability (lowering intervention rate $\lambda$) over inference cost reduction ($C_{\text{GPU}}$) for high-stakes agents.
-
-**3. Compute is Cheap, Attention is Expensive.**
-Across all examples, the **Model & Infra** costs (orange segments in Figure 4) are visually negligible compared to Returns. The economic bottleneck is no longer the cost of generating tokens, but the cost of verifying them (Human Intervention).
 
 ## The Reinforcement Learning Accelerator
 

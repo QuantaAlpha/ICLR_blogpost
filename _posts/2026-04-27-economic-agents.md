@@ -60,7 +60,6 @@ toc:
       - name: "Example 1: AI-Powered Market Research Analysis and Report Generation"
       - name: "Example 2: AI-Enhanced Customer Support Automation"
       - name: "Example 3: AI-Driven Deep Research in Finance"
-      - name: "Key Insights"
   - name: "The Reinforcement Learning Accelerator"
   - name: "Future Outlook: Agentic Liquidity and The MCP Wallet"
     subsections:

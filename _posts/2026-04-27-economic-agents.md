@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: "AI Fundamentals: Valuing AI Agents & Data Assets"
-description: "Large Language Model (LLM) agents now read the world through managed-context pipelines, write to it via tool-calling APIs, and continuously re-wire themselves with fresh experience. Stakeholders therefore need a Generally Accepted Accounting Principles (GAAP) compatible method to price both (i) the agent's labour-like output and (ii) the data traces that fuel learning. We formalise a single unifying metric - agent Economic Value (AEV)- and demonstrate, using evidence from millions of real conversations, $1M of freelance software contracts, and 48k physician rubric points in healthcare, that these metrics are measurable today. We then extend the template to reinforcement-learning regimes in which grounded rewards equal cash flows. Lastly, we propose a financial settlement layer, which transforms the agent from a passive software user into an active economic participant."
+description: "Large Language Model (LLM) agents now read the world through managed-context pipelines, write to it via tool-calling APIs, and continuously re-wire themselves with fresh experience. Stakeholders therefore need a Generally Accepted Accounting Principles (GAAP) compatible method to price both (i) the agent's labour-like output and (ii) the data traces that fuel learning. We formalise a single unifying metric - agent Economic Value (AEV)- and demonstrate that these metrics are measurable today. We then extend the template to reinforcement-learning regimes in which grounded rewards equal cash flows. Lastly, we propose a financial settlement layer, which transforms the agent from a passive software user into an active economic participant."
 date: 2026-04-27
 future: true
 htmlwidgets: true
@@ -371,7 +371,7 @@ Finally, we consider a simulated quantitative asset-management firm, *AlphaFunds
 Even after a heavy intervention penalty, the simulated agent achieves a 20% profit margin. Reducing the intervention rate to 2% in the model would lift AEV above \\$10,000.
 
 <figure style="text-align: center;">
-<img src="{{ 'assets/img/2026-04-27-economic-agents/aev_returns_costs_v2.png' | relative\_url }}" width="98%">
+<img src="{{ 'assets/img/2026-04-27-economic-agents/aev_returns_costs_v2.png' | relative_url }}" width="98%">
 <figcaption style="font-size: 1em;">Figure 4: <strong>AEV Structural Analysis: Returns vs. Costs.</strong> The top row displays the composition of economic flows, highlighting the Net Margin (AEV / Total Returns) for each simulated domain. The bottom row contrasts absolute Returns (Cost Saving + Efficiency Premium) against Costs (Human Intervention + Model + Data). While <em>Support Automation</em> (center) benefits from massive scale and low intervention costs, the <em>Finance Deep Research</em> agent (right) illustrates the "reliability tax," where high human intervention costs significantly compress the net margin despite valid cost savings.</figcaption>
 </figure>
 

@@ -13,22 +13,33 @@ mermaid:
   zoomable: true
 
 # Anonymize when submitting
-authors:
-  - name: Anonymous
-
 # authors:
-#   - name: Albert Einstein
-#     url: "https://en.wikipedia.org/wiki/Albert_Einstein"
-#     affiliations:
-#       name: IAS, Princeton
-#   - name: Boris Podolsky
-#     url: "https://en.wikipedia.org/wiki/Boris_Podolsky"
-#     affiliations:
-#       name: IAS, Princeton
-#   - name: Nathan Rosen
-#     url: "https://en.wikipedia.org/wiki/Nathan_Rosen"
-#     affiliations:
-#       name: IAS, Princeton
+#   - name: Anonymous
+
+authors:
+  - name: Qingyun Sun
+    url: "https://scholar.google.com/citations?user=POXzrBYAAAAJ"
+    affiliations:
+      name: Stanford University, Generative Alpha
+  - name: Kai Du
+    url: ""
+    affiliations:
+      name: Generative Alpha
+  - name: Yao Meng
+    url: ""
+    affiliations:
+      name: Generative Alpha
+  - name: Zhenheng Tang
+    url: "https://scholar.google.com/citations?user=FlYcrEcAAAAJ"
+    affiliations:
+      name: The Hong Kong University of Science and Technology
+  - name: Huacan Wang
+    url: "https://openreview.net/profile?id=~Huacan_Wang1"
+    affiliations:
+      name: University of the Chinese Academy of Sciences
+
+
+
 
 # must be the exact same name as your blogpost
 bibliography: 2026-04-27-economic-agents.bib
@@ -437,7 +448,6 @@ As the Era of Experience unfolds and agents increasingly learn from and act in t
 The future of AI valuation lies in this synthesis of technical capability and financial discipline <d-cite key="erol2025cost"></d-cite>. When Cost Saving and Efficiency Premium rise faster than Model, Data, and Human Intervention Costs, the resulting positive Agent Economic Value creates sustainable economic impact that can be measured, predicted, and optimised across diverse domains.
 
 *Read pipes feed knowledge; write pipes mint dollars; training data re-wires the mint. Keep intervention costs low and the cash machine hums.*
-
 
 
 

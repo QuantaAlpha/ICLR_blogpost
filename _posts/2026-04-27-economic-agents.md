@@ -24,7 +24,7 @@ authors:
   - name: Kai Du
     url: ""
     affiliations:
-      name: Generative Alpha
+      name: Independent Researcher
   - name: Yao Meng
     url: ""
     affiliations:
